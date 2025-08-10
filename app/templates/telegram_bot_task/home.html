@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="mb-4">{{ title }}</h1>
+    <p class="lead mb-5">API endpoints for generating trading analysis GIFs with Smart Money Concepts</p>
+    
+    <div class="row">
+        {% for endpoint in endpoints %}
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ endpoint.name }}</h5>
+                    <p class="card-text">{{ endpoint.description }}</p>
+                    <a href="{{ endpoint.url }}" class="btn btn-primary">Visit Endpoint</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="mt-5">
+        <h3>Quick Test Example</h3>
+        <p>Try generating a simple GIF:</p>
+        <div class="text-start">
+            <pre><code>GET /telegram_bot/generate-gif/?symbol=BTCUSDT&timeframe=1h&limit=100&window=50</code></pre>
+        </div>
+        <p class="mt-3">
+            <a href="/telegram_bot/generate-gif/?symbol=BTCUSDT&timeframe=1h&limit=100&window=50" 
+               class="btn btn-secondary" target="_blank">
+                Test Generate GIF
+            </a>
+        </p>
+    </div>
+
+    <div class="mt-5">
+        <h3>API Features</h3>
+        <ul class="list-unstyled">
+            <li>✅ <strong>SMC Analysis:</strong> Fair Value Gaps, Order Blocks, Liquidity Levels</li>
+            <li>✅ <strong>Multiple Timeframes:</strong> 1m, 5m, 15m, 1h, 4h, 1d and more</li>
+            <li>✅ <strong>Animated Charts:</strong> Rolling window analysis with candlestick charts</li>
+            <li>✅ <strong>RESTful API:</strong> Both GET and POST methods supported</li>
+            <li>✅ <strong>Real Market Data:</strong> Live data from Binance API</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+.card {
+    transition: transform 0.2s;
+    border: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+pre code {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+    display: block;
+}
+</style>
+{% endblock %}
