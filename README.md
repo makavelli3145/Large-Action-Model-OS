@@ -164,4 +164,4 @@ Contains the main functionality for telegram bot operations and task management.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is private property
