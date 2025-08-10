@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="C:\Users\Sibon\miniconda3" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="ThePerceptron_JupyterProject" />
+    <orderEntry type="module" module-name="market-liquidity-analyst" />
+    <orderEntry type="module" module-name="smart-money-concepts-master" />
+  </component>
+</module>
