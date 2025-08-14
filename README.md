@@ -1,6 +1,9 @@
 # Large-Action-Model-OS
 
-A Django web application for managing Telegram bot tasks and QA processes.
+A Simulaion-based Large Action Model OS. Intergrations  with Google A2A, Virtials, MCP and Web2 Dataset License archive.
+
+<img width="3194" height="898" alt="image" src="https://github.com/user-attachments/assets/4ca35025-13b2-4528-a9da-ec1ddb91066d" />
+
 
 ## Project Structure
 
