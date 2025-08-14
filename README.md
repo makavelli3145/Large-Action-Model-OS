@@ -1,4 +1,4 @@
-# FreyrQA Portal
+# Large-Action-Model-OS
 
 A Django web application for managing Telegram bot tasks and QA processes.
 
